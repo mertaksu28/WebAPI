@@ -19,7 +19,7 @@ namespace WebAPI.CustomMiddlewares
 
         public async Task Invoke(HttpContext context)
         {
-            string authHeader = context.Request.Headers["Authorization"];
+            string authHeader = context.Request.Headers["Authorization"]; 
 
             if (authHeader == null)
             {
